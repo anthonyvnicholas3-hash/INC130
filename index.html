@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Odds96 India — 130% Bonus + Free Bet up to ₹20,000 | Code INC130</title>
+<meta name="description" content="Odds96 — India's premier sports betting & casino. Get 130% bonus + free bet up to ₹20,000 with code INC130. Highest odds, live betting, instant UPI withdrawals, Aviator, Teen Patti & more.">
+<style>
+  :root{
+    --bg:#0a0e1a;
+    --bg-2:#0d1424;
+    --panel:#131b2e;
+    --panel-2:#1a2440;
+    --line:rgba(255,255,255,.08);
+    --gold:#f5b301;
+    --gold-2:#ffd54a;
+    --blue:#2f7bff;
+    --blue-deep:#1e56c8;
+    --green:#22c55e;
+    --red:#ef4444;
+    --text:#eef2f9;
+    --muted:#8b96ad;
+    --radius:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Segoe UI',system-ui,-apple-system,Roboto,'Helvetica Neue',Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.55;
+    overflow-x:hidden;
+  }
+  a{text-decoration:none;color:inherit}
+  img{max-width:100%}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+  /* ---------- top ticker ---------- */
+  .ticker{
+    background:linear-gradient(90deg,#1e56c8,#2f7bff 40%,#1e56c8);
+    font-size:.85rem;font-weight:600;
+    padding:8px 0;text-align:center;letter-spacing:.03em;
+  }
+  .ticker b{color:var(--gold-2)}
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(10,14,26,.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;gap:28px;height:66px}
+  .logo{font-size:1.6rem;font-weight:800;letter-spacing:-.02em;white-space:nowrap}
+  .logo span{color:var(--gold)}
+  .nav-links{display:flex;gap:22px;font-size:.92rem;font-weight:600;color:var(--muted)}
+  .nav-links a{padding:6px 2px;transition:color .2s}
+  .nav-links a:hover{color:var(--gold-2)}
+  .nav-cta{margin-left:auto;display:flex;gap:10px}
+  .btn{
+    display:inline-block;border-radius:10px;font-weight:700;cursor:pointer;
+    padding:10px 22px;font-size:.95rem;border:0;transition:transform .15s,box-shadow .15s;
+    text-align:center;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .btn-gold{
+    background:linear-gradient(135deg,var(--gold-2),var(--gold));
+    color:#1a1200;box-shadow:0 6px 18px rgba(245,179,1,.35);
+  }
+  .btn-outline{
+    background:transparent;color:var(--text);
+    border:1.5px solid rgba(255,255,255,.25);
+  }
+  .btn-outline:hover{border-color:var(--gold)}
+  .btn-blue{
+    background:linear-gradient(135deg,var(--blue),var(--blue-deep));
+    color:#fff;box-shadow:0 6px 18px rgba(47,123,255,.35);
+  }
+  .btn-lg{padding:15px 36px;font-size:1.1rem;border-radius:12px}
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(900px 420px at 78% -10%,rgba(47,123,255,.28),transparent 65%),
+      radial-gradient(700px 380px at 12% 110%,rgba(245,179,1,.14),transparent 60%),
+      linear-gradient(180deg,#0d1424,#0a0e1a);
+    padding:72px 0 64px;
+    border-bottom:1px solid var(--line);
+  }
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  .kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    background:rgba(245,179,1,.12);border:1px solid rgba(245,179,1,.4);
+    color:var(--gold-2);font-weight:700;font-size:.8rem;letter-spacing:.08em;
+    padding:6px 14px;border-radius:999px;text-transform:uppercase;margin-bottom:20px;
+  }
+  .hero h1{
+    font-size:clamp(2.1rem,4.6vw,3.4rem);
+    line-height:1.12;font-weight:800;letter-spacing:-.02em;margin-bottom:18px;
+  }
+  .hero h1 .gold{
+    background:linear-gradient(120deg,var(--gold-2),var(--gold));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero p.sub{color:var(--muted);font-size:1.08rem;max-width:520px;margin-bottom:26px}
+  .promo-code{
+    display:inline-flex;align-items:center;gap:12px;
+    background:var(--panel);border:1.5px dashed var(--gold);
+    border-radius:12px;padding:12px 18px;margin-bottom:28px;
+  }
+  .promo-code .label{color:var(--muted);font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+  .promo-code .code{font-size:1.35rem;font-weight:800;color:var(--gold-2);letter-spacing:.12em}
+  .promo-code button{
+    background:rgba(245,179,1,.15);border:1px solid rgba(245,179,1,.5);color:var(--gold-2);
+    border-radius:8px;padding:6px 12px;font-weight:700;font-size:.8rem;cursor:pointer;
+  }
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-note{margin-top:16px;color:var(--muted);font-size:.85rem}
+
+  /* hero bonus card */
+  .bonus-card{
+    background:linear-gradient(160deg,#1a2440,#131b2e 70%);
+    border:1px solid var(--line);border-radius:20px;
+    padding:34px 30px;text-align:center;position:relative;
+    box-shadow:0 30px 60px rgba(0,0,0,.45);
+  }
+  .bonus-card .ribbon{
+    position:absolute;top:-14px;left:50%;transform:translateX(-50%);
+    background:linear-gradient(135deg,var(--gold-2),var(--gold));color:#1a1200;
+    font-weight:800;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;
+    padding:6px 18px;border-radius:999px;white-space:nowrap;
+  }
+  .bonus-card .pct{
+    font-size:4.6rem;font-weight:900;line-height:1;margin:18px 0 4px;
+    background:linear-gradient(120deg,var(--gold-2),var(--gold));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .bonus-card .plus{font-size:1.3rem;font-weight:800;color:var(--text);margin-bottom:2px}
+  .bonus-card .upto{color:var(--muted);font-weight:600;margin-bottom:20px}
+  .bonus-card .upto b{color:var(--text);font-size:1.15rem}
+  .jackpot{
+    margin-top:24px;background:rgba(47,123,255,.1);
+    border:1px solid rgba(47,123,255,.35);border-radius:12px;padding:14px;
+  }
+  .jackpot .jp-label{font-size:.78rem;font-weight:700;letter-spacing:.1em;color:var(--blue);text-transform:uppercase}
+  .jackpot .jp-amount{font-size:1.9rem;font-weight:900;color:#fff}
+  .jackpot .jp-timer{font-size:.85rem;color:var(--muted)}
+  .jackpot .jp-timer b{color:var(--gold-2);font-variant-numeric:tabular-nums}
+
+  /* ---------- trust strip ---------- */
+  .trust{border-bottom:1px solid var(--line);background:var(--bg-2)}
+  .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:26px 0}
+  .trust-item{display:flex;align-items:center;gap:14px}
+  .trust-item .ico{
+    width:46px;height:46px;border-radius:12px;flex:none;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(245,179,1,.12);border:1px solid rgba(245,179,1,.3);
+  }
+  .trust-item .ico svg{width:24px;height:24px;stroke:var(--gold-2)}
+  .trust-item h4{font-size:.95rem;font-weight:700}
+  .trust-item p{font-size:.8rem;color:var(--muted)}
+
+  /* ---------- sections ---------- */
+  section{padding:72px 0}
+  .sec-head{text-align:center;max-width:640px;margin:0 auto 44px}
+  .sec-head .tag{
+    color:var(--gold);font-weight:700;font-size:.8rem;
+    letter-spacing:.14em;text-transform:uppercase;
+  }
+  .sec-head h2{font-size:clamp(1.6rem,3vw,2.3rem);font-weight:800;letter-spacing:-.01em;margin-top:8px}
+  .sec-head p{color:var(--muted);margin-top:10px}
+
+  /* ---------- most placed bets ---------- */
+  .bets{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .bet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .bet-card{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;transition:transform .2s,border-color .2s;
+  }
+  .bet-card:hover{transform:translateY(-4px);border-color:rgba(245,179,1,.4)}
+  .bet-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+  .bet-league{font-size:.75rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  .live-dot{
+    display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:800;
+    color:var(--red);text-transform:uppercase;letter-spacing:.08em;
+  }
+  .live-dot::before{
+    content:"";width:8px;height:8px;border-radius:50%;background:var(--red);
+    animation:pulse 1.4s infinite;
+  }
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .bet-match{font-weight:700;font-size:1.02rem;margin-bottom:4px}
+  .bet-pick{color:var(--muted);font-size:.86rem;margin-bottom:16px}
+  .bet-odds{display:flex;align-items:center;justify-content:space-between}
+  .odds-boost{display:flex;align-items:baseline;gap:10px}
+  .odds-old{color:var(--muted);text-decoration:line-through;font-size:.95rem}
+  .odds-new{color:var(--green);font-weight:900;font-size:1.5rem}
+  .boost-tag{
+    background:rgba(34,197,94,.12);color:var(--green);border:1px solid rgba(34,197,94,.35);
+    font-size:.7rem;font-weight:800;padding:4px 10px;border-radius:999px;
+    text-transform:uppercase;letter-spacing:.06em;
+  }
+  .bet-cta{margin-top:16px;width:100%}
+  .popularity{margin-top:14px}
+  .popularity .p-label{display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted);margin-bottom:5px}
+  .popularity .p-label b{color:var(--gold-2)}
+  .p-bar{height:5px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden}
+  .p-bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--gold),var(--gold-2))}
+
+  /* ---------- features ---------- */
+  .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .feat{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px;transition:transform .2s,border-color .2s;
+  }
+  .feat:hover{transform:translateY(-4px);border-color:rgba(47,123,255,.45)}
+  .feat .ico{
+    width:52px;height:52px;border-radius:14px;margin-bottom:16px;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(47,123,255,.12);border:1px solid rgba(47,123,255,.3);
+  }
+  .feat .ico svg{width:26px;height:26px;stroke:var(--blue)}
+  .feat h3{font-size:1.08rem;font-weight:700;margin-bottom:8px}
+  .feat p{color:var(--muted);font-size:.9rem}
+
+  /* ---------- games ---------- */
+  .games{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .game-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .game{
+    border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
+    position:relative;min-height:230px;display:flex;flex-direction:column;justify-content:flex-end;
+    padding:20px;transition:transform .2s;
+  }
+  .game:hover{transform:translateY(-5px)}
+  .game .g-badge{
+    position:absolute;top:14px;left:14px;font-size:.68rem;font-weight:800;
+    text-transform:uppercase;letter-spacing:.08em;padding:4px 10px;border-radius:999px;
+    background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.25);color:#fff;
+  }
+  .game h3{font-size:1.25rem;font-weight:800;position:relative}
+  .game p{font-size:.82rem;color:rgba(255,255,255,.75);position:relative}
+  .g-aviator{background:linear-gradient(160deg,#e11d48 0%,#7f1030 60%,#3b0716)}
+  .g-jetx{background:linear-gradient(160deg,#2f7bff 0%,#173a80 60%,#0a1a3d)}
+  .g-teenpatti{background:linear-gradient(160deg,#16a34a 0%,#0b5427 60%,#052912)}
+  .g-chicken{background:linear-gradient(160deg,#f59e0b 0%,#92500a 60%,#452605)}
+  .game .g-emoji{font-size:3rem;position:absolute;top:38%;left:50%;transform:translate(-50%,-50%);filter:drop-shadow(0 8px 16px rgba(0,0,0,.4))}
+
+  /* ---------- offers ---------- */
+  .offer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .offer{
+    background:linear-gradient(160deg,var(--panel-2),var(--panel));
+    border:1px solid var(--line);border-radius:18px;padding:28px;
+    display:flex;flex-direction:column;transition:transform .2s,border-color .2s;
+  }
+  .offer:hover{transform:translateY(-4px)}
+  .offer.gold-border{border-color:rgba(245,179,1,.55);box-shadow:0 12px 40px rgba(245,179,1,.12)}
+  .offer .o-tag{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+  .offer h3{font-size:1.3rem;font-weight:800;margin-bottom:8px}
+  .offer p{color:var(--muted);font-size:.9rem;flex:1}
+  .offer .o-code{
+    margin:18px 0;display:flex;align-items:center;justify-content:space-between;
+    background:rgba(255,255,255,.05);border:1px dashed rgba(255,255,255,.3);
+    border-radius:10px;padding:10px 14px;font-weight:800;letter-spacing:.1em;
+  }
+  .offer .o-code span{color:var(--gold-2)}
+  .offer .o-code button{
+    background:none;border:0;color:var(--muted);font-size:.75rem;font-weight:700;
+    cursor:pointer;text-transform:uppercase;letter-spacing:.05em;
+  }
+  .offer .o-code button:hover{color:var(--gold-2)}
+
+  /* ---------- steps ---------- */
+  .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:step}
+  .step{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px;position:relative;
+  }
+  .step .num{
+    width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,var(--gold-2),var(--gold));color:#1a1200;
+    font-weight:900;font-size:1.15rem;margin-bottom:16px;
+  }
+  .step h3{font-size:1.05rem;font-weight:700;margin-bottom:6px}
+  .step p{color:var(--muted);font-size:.9rem}
+
+  /* ---------- payments ---------- */
+  .pay-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+  .pay{
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:14px 26px;font-weight:800;font-size:1rem;letter-spacing:.02em;
+    display:flex;align-items:center;gap:10px;color:var(--text);
+  }
+  .pay small{display:block;color:var(--muted);font-weight:600;font-size:.72rem;letter-spacing:.04em}
+  .pay .dot{width:10px;height:10px;border-radius:50%;flex:none}
+
+  /* ---------- final cta ---------- */
+  .final{
+    background:
+      radial-gradient(700px 300px at 50% 0%,rgba(245,179,1,.16),transparent 70%),
+      var(--bg-2);
+    border-top:1px solid var(--line);text-align:center;
+  }
+  .final h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:800;margin-bottom:12px}
+  .final h2 span{color:var(--gold-2)}
+  .final p{color:var(--muted);max-width:520px;margin:0 auto 28px}
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--line);padding:44px 0 30px;background:#080b14}
+  .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:34px}
+  .foot-grid h4{font-size:.85rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;color:var(--text)}
+  .foot-grid a{display:block;color:var(--muted);font-size:.88rem;padding:4px 0}
+  .foot-grid a:hover{color:var(--gold-2)}
+  .foot-brand p{color:var(--muted);font-size:.85rem;margin-top:12px;max-width:320px}
+  .age-badge{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:44px;height:44px;border-radius:50%;border:2px solid var(--red);
+    color:var(--red);font-weight:900;font-size:.95rem;margin-top:16px;
+  }
+  .foot-bottom{
+    border-top:1px solid var(--line);padding-top:22px;
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    color:var(--muted);font-size:.78rem;
+  }
+
+  /* ---------- responsive ---------- */
+  @media(max-width:960px){
+    .hero-grid{grid-template-columns:1fr;gap:36px}
+    .trust-grid{grid-template-columns:repeat(2,1fr)}
+    .bet-grid,.feat-grid,.offer-grid,.steps-grid{grid-template-columns:1fr 1fr}
+    .game-grid{grid-template-columns:repeat(2,1fr)}
+    .foot-grid{grid-template-columns:1fr 1fr}
+    .nav-links{display:none}
+  }
+  @media(max-width:600px){
+    section{padding:52px 0}
+    .trust-grid,.bet-grid,.feat-grid,.offer-grid,.steps-grid,.game-grid{grid-template-columns:1fr}
+    .nav-cta .btn-outline{display:none}
+    .foot-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<!-- ticker -->
+<div class="ticker">🏆 Weekly <b>JACKPOT — ₹1 CRORE</b> &nbsp;•&nbsp; 130% Welcome Bonus with code <b>INC130</b> &nbsp;•&nbsp; Instant UPI Withdrawals ⚡</div>
+
+<!-- header -->
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">ODDS<span>96</span></a>
+    <nav class="nav-links">
+      <a href="#bets">Cricket</a>
+      <a href="#bets">Live Betting</a>
+      <a href="#games">Casino</a>
+      <a href="#games">Aviator</a>
+      <a href="#offers">Promotions</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-outline" href="#offers">Log In</a>
+      <a class="btn btn-gold" href="#offers">Register</a>
+    </div>
+  </div>
+</header>
+
+<!-- hero -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">🇮🇳 India's Premier Betting &amp; Casino</span>
+      <h1>Bet on Cricket with the <span class="gold">Highest Odds</span> in India</h1>
+      <p class="sub">Join 100K+ active players. In-play betting, live match streaming and instant withdrawals via UPI, PhonePe, Paytm, bank transfer or USDT.</p>
+      <div class="promo-code">
+        <div>
+          <div class="label">Use Promo Code</div>
+          <div class="code" id="heroCode">INC130</div>
+        </div>
+        <button onclick="copyCode('INC130',this)">Copy</button>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-gold btn-lg" href="#offers">Claim 130% Bonus</a>
+        <a class="btn btn-outline btn-lg" href="#bets">See Today's Odds</a>
+      </div>
+      <p class="hero-note">18+ only. Play responsibly. T&amp;Cs apply.</p>
+    </div>
+    <div class="bonus-card">
+      <div class="ribbon">Welcome Offer</div>
+      <div class="pct">130%</div>
+      <div class="plus">BONUS + FREE BET</div>
+      <div class="upto">up to <b>₹20,000</b> &nbsp;·&nbsp; code <b style="color:var(--gold-2)">INC130</b></div>
+      <a class="btn btn-gold" style="width:100%" href="#offers">Get Bonus Now</a>
+      <div class="jackpot">
+        <div class="jp-label">Weekly Jackpot</div>
+        <div class="jp-amount">₹1,00,00,000</div>
+        <div class="jp-timer">Draws in <b id="jpTimer">--:--:--</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- trust strip -->
+<div class="trust">
+  <div class="wrap trust-grid">
+    <div class="trust-item">
+      <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 0 0-3-3.87M9 20H4v-2a4 4 0 0 1 3-3.87m6-1.13a4 4 0 1 0-2 0m8-7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/></svg></div>
+      <div><h4>100K+ Active Users</h4><p>India's fastest-growing platform</p></div>
+    </div>
+    <div class="trust-item">
+      <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+      <div><h4>Instant Withdrawals</h4><p>UPI · PhonePe · Paytm · Bank · USDT</p></div>
+    </div>
+    <div class="trust-item">
+      <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12a8.96 8.96 0 0 1-9 9 8.97 8.97 0 0 1-4.5-1.2L3 21l1.2-4.5A8.97 8.97 0 0 1 3 12a9 9 0 1 1 18 0Z"/></svg></div>
+      <div><h4>24/7 Live Support</h4><p>Hindi · Marathi · English</p></div>
+    </div>
+    <div class="trust-item">
+      <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg></div>
+      <div><h4>Weekly ₹1 Cr Jackpot</h4><p>New winner every single week</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- most placed bets -->
+<section class="bets" id="bets">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Most Placed Bets</span>
+      <h2>Popular Picks, <span style="color:var(--green)">Boosted Odds</span></h2>
+      <p>See what India is betting on right now — and get better odds on the most placed bets, only at Odds96.</p>
+    </div>
+    <div class="bet-grid">
+      <div class="bet-card">
+        <div class="bet-top"><span class="bet-league">Cricket · T20</span><span class="live-dot">Live</span></div>
+        <div class="bet-match">India vs Australia</div>
+        <div class="bet-pick">Match Winner — India</div>
+        <div class="bet-odds">
+          <div class="odds-boost"><span class="odds-old">1.72</span><span class="odds-new">1.95</span></div>
+          <span class="boost-tag">Odds Boost</span>
+        </div>
+        <div class="popularity">
+          <div class="p-label"><span>Bets placed today</span><b>92%</b></div>
+          <div class="p-bar"><i style="width:92%"></i></div>
+        </div>
+        <a class="btn btn-blue bet-cta" href="#offers">Place Bet</a>
+      </div>
+      <div class="bet-card">
+        <div class="bet-top"><span class="bet-league">Cricket · IPL</span><span class="live-dot">Live</span></div>
+        <div class="bet-match">Mumbai vs Chennai</div>
+        <div class="bet-pick">Total Sixes — Over 14.5</div>
+        <div class="bet-odds">
+          <div class="odds-boost"><span class="odds-old">1.85</span><span class="odds-new">2.10</span></div>
+          <span class="boost-tag">Odds Boost</span>
+        </div>
+        <div class="popularity">
+          <div class="p-label"><span>Bets placed today</span><b>87%</b></div>
+          <div class="p-bar"><i style="width:87%"></i></div>
+        </div>
+        <a class="btn btn-blue bet-cta" href="#offers">Place Bet</a>
+      </div>
+      <div class="bet-card">
+        <div class="bet-top"><span class="bet-league">Football · EPL</span><span class="bet-league">Today 21:30</span></div>
+        <div class="bet-match">Arsenal vs Liverpool</div>
+        <div class="bet-pick">Both Teams to Score — Yes</div>
+        <div class="bet-odds">
+          <div class="odds-boost"><span class="odds-old">1.66</span><span class="odds-new">1.88</span></div>
+          <span class="boost-tag">Odds Boost</span>
+        </div>
+        <div class="popularity">
+          <div class="p-label"><span>Bets placed today</span><b>78%</b></div>
+          <div class="p-bar"><i style="width:78%"></i></div>
+        </div>
+        <a class="btn btn-blue bet-cta" href="#offers">Place Bet</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- features -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Why Odds96</span>
+      <h2>Built for Serious Cricket Fans</h2>
+      <p>The most number of cricket games in India, with the tools to bet smarter.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat">
+        <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8-8 8-4-4-6 6"/></svg></div>
+        <h3>Highest Odds</h3>
+        <p>Consistently better prices than other Indian betting sites — more winnings on every bet you place.</p>
+      </div>
+      <div class="feat">
+        <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg></div>
+        <h3>In-Play Betting</h3>
+        <p>Bet ball-by-ball as the action unfolds, with odds updated in real time on every over.</p>
+      </div>
+      <div class="feat">
+        <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.55-2.28A1 1 0 0 1 21 8.62v6.76a1 1 0 0 1-1.45.9L15 14M5 18h8a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2Z"/></svg></div>
+        <h3>Live Match Streaming</h3>
+        <p>Watch cricket, football and more streamed live in HD — right inside your betslip.</p>
+      </div>
+      <div class="feat">
+        <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" stroke-linejoin="round" d="M8 12l2.5 2.5L16 9"/></svg></div>
+        <h3>Live Betting</h3>
+        <p>Thousands of live markets every day across cricket, football, tennis, kabaddi and more.</p>
+      </div>
+      <div class="feat">
+        <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h10"/></svg></div>
+        <h3>Most Cricket Games</h3>
+        <p>IPL, World Cup, Test series, T20 leagues worldwide — the deepest cricket coverage in India.</p>
+      </div>
+      <div class="feat">
+        <div class="ico"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+        <h3>Instant Withdrawal</h3>
+        <p>Cash out in minutes via UPI, PhonePe, Paytm, direct bank transfer or USDT.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- games -->
+<section class="games" id="games">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Casino &amp; Crash Games</span>
+      <h2>India's Favourite Games</h2>
+      <p>Live casino with real dealers — Teen Patti, Baccarat, Andar Bahar &amp; Roulette — plus the crash games everyone is playing.</p>
+    </div>
+    <div class="game-grid">
+      <a class="game g-aviator" href="#offers">
+        <span class="g-badge">🔥 Trending</span>
+        <span class="g-emoji">✈️</span>
+        <h3>Aviator</h3>
+        <p>Cash out before the plane flies away</p>
+      </a>
+      <a class="game g-teenpatti" href="#offers">
+        <span class="g-badge">Live Dealer</span>
+        <span class="g-emoji">🃏</span>
+        <h3>Teen Patti</h3>
+        <p>India's classic card game, live 24/7</p>
+      </a>
+      <a class="game g-jetx" href="#offers">
+        <span class="g-badge">Crash Game</span>
+        <span class="g-emoji">🚀</span>
+        <h3>JetX</h3>
+        <p>Ride the jet, multiply your stake</p>
+      </a>
+      <a class="game g-chicken" href="#offers">
+        <span class="g-badge">New</span>
+        <span class="g-emoji">🐔</span>
+        <h3>Chicken Road</h3>
+        <p>Cross the road, dodge the traps, win big</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- offers -->
+<section id="offers">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Promotions</span>
+      <h2>Three Bonuses. Three Codes.</h2>
+      <p>Stack your welcome offer with slots and live casino bonuses.</p>
+    </div>
+    <div class="offer-grid">
+      <div class="offer gold-border">
+        <span class="o-tag">⭐ Welcome Offer</span>
+        <h3>130% Bonus + Free Bet</h3>
+        <p>Up to ₹20,000 on your first deposit, plus a free bet to get you started on sports.</p>
+        <div class="o-code"><span>INC130</span><button onclick="copyCode('INC130',this)">Copy</button></div>
+        <a class="btn btn-gold" href="#">Claim Offer</a>
+      </div>
+      <div class="offer">
+        <span class="o-tag">🎰 Slots</span>
+        <h3>100% Slots Bonus</h3>
+        <p>Double your deposit to spin thousands of premium slots from the world's top providers.</p>
+        <div class="o-code"><span>JP100</span><button onclick="copyCode('JP100',this)">Copy</button></div>
+        <a class="btn btn-blue" href="#">Claim Offer</a>
+      </div>
+      <div class="offer">
+        <span class="o-tag">🎲 Live Casino</span>
+        <h3>Live Casino Bonus</h3>
+        <p>Teen Patti, Baccarat, Andar Bahar &amp; Roulette with real dealers — boosted with a live casino bonus.</p>
+        <div class="o-code"><span>LCAS100</span><button onclick="copyCode('LCAS100',this)">Copy</button></div>
+        <a class="btn btn-blue" href="#">Claim Offer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- steps -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Get Started</span>
+      <h2>Betting in Under 2 Minutes</h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Register Free</h3>
+        <p>Sign up with your mobile number — it takes less than a minute.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Deposit with Code INC130</h3>
+        <p>Pay via UPI, PhonePe, Paytm, bank or USDT and unlock your 130% bonus + free bet.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Bet &amp; Withdraw Instantly</h3>
+        <p>Back your team, play Aviator or Teen Patti, and cash out winnings in minutes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- payments -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Payments</span>
+      <h2>Deposit &amp; Withdraw Your Way</h2>
+      <p>Instant withdrawals, zero hassle — in Indian Rupees or crypto.</p>
+    </div>
+    <div class="pay-row">
+      <div class="pay"><span class="dot" style="background:#3d8f45"></span>UPI<small>Instant</small></div>
+      <div class="pay"><span class="dot" style="background:#5f259f"></span>PhonePe<small>Instant</small></div>
+      <div class="pay"><span class="dot" style="background:#00baf2"></span>Paytm<small>Instant</small></div>
+      <div class="pay"><span class="dot" style="background:#f5b301"></span>Bank Transfer<small>Same day</small></div>
+      <div class="pay"><span class="dot" style="background:#26a17b"></span>USDT<small>Crypto</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- final CTA -->
+<section class="final">
+  <div class="wrap">
+    <h2>Ready to Win? <span>₹20,000</span> Bonus Awaits</h2>
+    <p>Register now with code <b style="color:var(--gold-2)">INC130</b> and join 100K+ players on India's premier betting &amp; casino platform.</p>
+    <a class="btn btn-gold btn-lg" href="#">Register &amp; Claim 130% Bonus</a>
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="#">ODDS<span>96</span></a>
+        <p>India's premier online sports betting and casino platform. Highest odds, instant withdrawals and 24/7 support in Hindi, Marathi and English.</p>
+        <span class="age-badge">18+</span>
+      </div>
+      <div>
+        <h4>Betting</h4>
+        <a href="#bets">Cricket</a>
+        <a href="#bets">Live / In-Play</a>
+        <a href="#bets">Football</a>
+        <a href="#bets">Odds Boosts</a>
+      </div>
+      <div>
+        <h4>Casino</h4>
+        <a href="#games">Aviator</a>
+        <a href="#games">Teen Patti</a>
+        <a href="#games">Live Casino</a>
+        <a href="#games">Slots</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="#">24/7 Live Chat</a>
+        <a href="#">Payments Help</a>
+        <a href="#">Responsible Gaming</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Odds96. All rights reserved.</span>
+      <span>Gambling can be addictive. Play responsibly. 18+ only. T&amp;Cs apply to all offers.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // copy promo code
+  function copyCode(code, btn){
+    navigator.clipboard.writeText(code).then(function(){
+      var old = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(function(){ btn.textContent = old; }, 1600);
+    });
+  }
+  // weekly jackpot countdown → next Sunday 21:00 IST
+  (function(){
+    var el = document.getElementById('jpTimer');
+    if(!el) return;
+    function next(){
+      var now = new Date();
+      var t = new Date(now);
+      t.setDate(now.getDate() + ((7 - now.getDay()) % 7));
+      t.setHours(21,0,0,0);
+      if(t <= now) t.setDate(t.getDate() + 7);
+      return t;
+    }
+    var target = next();
+    function tick(){
+      var d = target - new Date();
+      if(d < 0){ target = next(); d = target - new Date(); }
+      var h = Math.floor(d/3.6e6), m = Math.floor(d%3.6e6/6e4), s = Math.floor(d%6e4/1e3);
+      el.textContent = (h<10?'0':'')+h+':'+(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+    }
+    tick();
+    setInterval(tick,1000);
+  })();
+</script>
+</body>
+</html>
