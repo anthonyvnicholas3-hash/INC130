@@ -7,7 +7,7 @@
 <meta name="description" content="Real matches, exact odds. Bet in under 2 minutes, withdraw in under 1 — UPI / PhonePe / Paytm. 130% bonus + free bet up to ₹20,000 with code INC130.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Khand:wght@500;600;700&family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#0b0d13;
@@ -23,8 +23,8 @@
     --green:#35c66b;
     --text:#f2f4f8;
     --muted:#8b93a7;
-    --hfont:'Baloo 2','Mukta',system-ui,sans-serif;
-    --bfont:'Mukta','Baloo 2',system-ui,sans-serif;
+    --hfont:'Khand','Hind',system-ui,sans-serif;
+    --bfont:'Hind',system-ui,sans-serif;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -64,8 +64,8 @@
   .lang-pill.active{background:var(--blue);color:#fff}
   .nav-cta{margin-left:auto;display:flex;gap:10px}
   .btn{
-    display:inline-block;border-radius:10px;font-weight:700;cursor:pointer;
-    padding:9px 22px;font-size:.95rem;border:0;text-align:center;
+    display:inline-block;border-radius:10px;font-weight:600;cursor:pointer;
+    padding:9px 22px;font-size:1.02rem;letter-spacing:.01em;border:0;text-align:center;
     transition:background .15s,transform .12s,border-color .15s;
   }
   .btn:active{transform:scale(.98)}
@@ -94,13 +94,10 @@
   }
 
   /* ---------- hero : most placed bets ---------- */
-  /* To add a hero background image, replace the .hero line below with:
-     .hero{padding:34px 0 56px;
-       background:linear-gradient(rgba(11,13,19,.88),rgba(11,13,19,.98)),
-                  url('images/hero-cricket.jpg') center/cover} */
+  /* hero bg image: add url('images/hero.jpg') center/cover behind a dark gradient */
   .hero{padding:34px 0 56px}
   .hero h1{
-    font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:800;letter-spacing:-.01em;line-height:1.2;
+    font-size:clamp(2rem,4.2vw,3rem);font-weight:700;line-height:1.15;
   }
   .hero .sub{color:var(--muted);max-width:640px;margin-top:6px;font-size:1rem}
   .stat-row{
@@ -149,7 +146,7 @@
   /* ---------- sections ---------- */
   section{padding:56px 0}
   .sec-h{margin-bottom:26px}
-  .sec-h h2{font-size:clamp(1.4rem,2.8vw,1.9rem);font-weight:800;line-height:1.25}
+  .sec-h h2{font-size:clamp(1.6rem,3.2vw,2.3rem);font-weight:700;line-height:1.15}
   .sec-h p{color:var(--muted);margin-top:4px;max-width:620px}
 
   /* ---------- speed ---------- */
@@ -172,7 +169,7 @@
     border-radius:12px;padding:20px;display:flex;flex-direction:column;
   }
   .wd-card .wd-time{
-    font-family:var(--hfont);font-size:2.2rem;font-weight:800;color:var(--green);line-height:1.1;
+    font-family:var(--hfont);font-size:2.7rem;font-weight:700;color:var(--green);line-height:1;
   }
   .wd-card h3{font-size:1.05rem;font-weight:700;margin-top:2px}
   .wd-card p{color:var(--muted);font-size:.88rem;margin-top:6px;flex:1}
@@ -194,10 +191,7 @@
     content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;
     border-radius:50%;filter:blur(34px);opacity:.5;
   }
-  /* To use real game artwork instead of the glow, give each tile an image:
-     .game.c-red{background:linear-gradient(180deg,rgba(11,13,19,.2) 30%,rgba(11,13,19,.94)),
-                 url('images/aviator.jpg') center/cover}
-     (repeat for .c-green/.c-blue/.c-amber with their own files) */
+  /* game art: swap ::after glow for url('images/<game>.jpg') center/cover + dark gradient */
   .game.c-red::after{background:#e5484d}
   .game.c-green::after{background:#2f9e5f}
   .game.c-blue::after{background:#2f6bff}
@@ -232,7 +226,7 @@
 
   /* ---------- final ---------- */
   .final{text-align:center}
-  .final h2{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:800}
+  .final h2{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700}
   .final p{color:var(--muted);margin:8px auto 22px;max-width:480px}
 
   /* ---------- footer ---------- */
