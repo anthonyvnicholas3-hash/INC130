@@ -323,6 +323,74 @@
     color:var(--muted);font-size:.78rem;
   }
 
+  /* ---------- signup modal ---------- */
+  .modal-overlay{
+    position:fixed;inset:0;z-index:100;display:none;
+    align-items:center;justify-content:center;padding:20px;
+    background:rgba(5,8,16,.82);backdrop-filter:blur(6px);
+  }
+  .modal-overlay.open{display:flex}
+  .signup-modal{
+    background:linear-gradient(170deg,#1a2440,#131b2e 60%);
+    border:1px solid rgba(245,179,1,.35);border-radius:20px;
+    width:100%;max-width:420px;padding:30px 28px;position:relative;
+    box-shadow:0 40px 90px rgba(0,0,0,.6);
+    max-height:calc(100vh - 40px);overflow-y:auto;
+  }
+  .modal-close{
+    position:absolute;top:14px;right:14px;width:34px;height:34px;
+    border-radius:50%;border:1px solid rgba(255,255,255,.2);
+    background:rgba(255,255,255,.06);color:var(--muted);
+    font-size:1.05rem;font-weight:700;cursor:pointer;line-height:1;
+  }
+  .modal-close:hover{color:#fff;border-color:rgba(255,255,255,.45)}
+  .signup-modal .m-offer{
+    text-align:center;background:rgba(245,179,1,.1);
+    border:1px dashed rgba(245,179,1,.5);border-radius:12px;
+    padding:12px;margin-bottom:20px;
+  }
+  .signup-modal .m-offer b{color:var(--gold-2);font-size:1.15rem}
+  .signup-modal .m-offer small{display:block;color:var(--muted);font-weight:600;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase}
+  .signup-modal h3{font-size:1.35rem;font-weight:800;text-align:center;margin-bottom:4px}
+  .signup-modal .m-sub{text-align:center;color:var(--muted);font-size:.86rem;margin-bottom:18px}
+  .m-benefits{list-style:none;margin:0 0 18px;display:grid;gap:7px}
+  .m-benefits li{font-size:.85rem;color:var(--text);display:flex;gap:8px;align-items:center}
+  .m-benefits li::before{content:"✓";color:var(--green);font-weight:900;flex:none}
+  .field{margin-bottom:14px}
+  .field label{display:block;font-size:.75rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+  .field .input-row{display:flex;align-items:stretch;border:1.5px solid rgba(255,255,255,.18);border-radius:10px;overflow:hidden;background:rgba(255,255,255,.05)}
+  .field .input-row:focus-within{border-color:var(--gold)}
+  .field .prefix{display:flex;align-items:center;padding:0 12px;font-weight:700;color:var(--muted);border-right:1px solid rgba(255,255,255,.12);font-size:.95rem}
+  .field input{
+    flex:1;min-width:0;background:transparent;border:0;outline:0;color:var(--text);
+    padding:13px 14px;font-size:1rem;font-weight:600;font-family:inherit;letter-spacing:.02em;
+  }
+  .field input::placeholder{color:rgba(139,150,173,.6);font-weight:500}
+  .field input.code-input{text-transform:uppercase;letter-spacing:.12em;color:var(--gold-2);font-weight:800}
+  .m-submit{width:100%;margin-top:4px}
+  .m-note{text-align:center;color:var(--muted);font-size:.72rem;margin-top:12px}
+  .m-success{display:none;text-align:center;padding:26px 0 12px}
+  .m-success .tick{
+    width:64px;height:64px;border-radius:50%;margin:0 auto 16px;
+    display:flex;align-items:center;justify-content:center;font-size:1.8rem;
+    background:rgba(34,197,94,.15);border:2px solid var(--green);color:var(--green);
+  }
+  .m-success h4{font-size:1.2rem;font-weight:800;margin-bottom:6px}
+  .m-success p{color:var(--muted);font-size:.88rem}
+  .signup-modal.done form,.signup-modal.done .m-benefits,.signup-modal.done .m-sub{display:none}
+  .signup-modal.done .m-success{display:block}
+
+  /* ---------- mobile sticky CTA ---------- */
+  .mobile-cta{
+    display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;
+    padding:10px 14px calc(12px + env(safe-area-inset-bottom));
+    background:rgba(10,14,26,.96);backdrop-filter:blur(12px);
+    border-top:1px solid rgba(245,179,1,.35);
+  }
+  .mobile-cta .btn{width:100%;padding:14px;font-size:1rem}
+  .mobile-cta .mc-note{text-align:center;font-size:.7rem;color:var(--muted);margin-top:5px}
+  .mobile-cta .mc-note b{color:var(--gold-2)}
+
   /* ---------- responsive ---------- */
   @media(max-width:960px){
     .hero-grid{grid-template-columns:1fr;gap:36px}
@@ -333,10 +401,15 @@
     .nav-links{display:none}
   }
   @media(max-width:600px){
+    body{padding-bottom:86px}
     section{padding:52px 0}
+    .hero{padding:44px 0 48px}
     .trust-grid,.bet-grid,.feat-grid,.offer-grid,.steps-grid,.game-grid{grid-template-columns:1fr}
     .nav-cta .btn-outline{display:none}
     .foot-grid{grid-template-columns:1fr}
+    .mobile-cta{display:block}
+    .modal-overlay{padding:0;align-items:flex-end}
+    .signup-modal{max-width:none;border-radius:22px 22px 0 0;border-bottom:0;max-height:92vh}
   }
 </style>
 </head>
@@ -357,8 +430,8 @@
       <a href="#offers">Promotions</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-outline" href="#offers">Log In</a>
-      <a class="btn btn-gold" href="#offers">Register</a>
+      <a class="btn btn-outline" href="#" data-signup="INC130">Log In</a>
+      <a class="btn btn-gold" href="#" data-signup="INC130">Register</a>
     </div>
   </div>
 </header>
@@ -378,7 +451,7 @@
         <button onclick="copyCode('INC130',this)">Copy</button>
       </div>
       <div class="hero-actions">
-        <a class="btn btn-gold btn-lg" href="#offers">Claim 130% Bonus</a>
+        <a class="btn btn-gold btn-lg" href="#" data-signup="INC130">Claim 130% Bonus</a>
         <a class="btn btn-outline btn-lg" href="#bets">See Today's Odds</a>
       </div>
       <p class="hero-note">18+ only. Play responsibly. T&amp;Cs apply.</p>
@@ -388,7 +461,7 @@
       <div class="pct">130%</div>
       <div class="plus">BONUS + FREE BET</div>
       <div class="upto">up to <b>₹20,000</b> &nbsp;·&nbsp; code <b style="color:var(--gold-2)">INC130</b></div>
-      <a class="btn btn-gold" style="width:100%" href="#offers">Get Bonus Now</a>
+      <a class="btn btn-gold" style="width:100%" href="#" data-signup="INC130">Get Bonus Now</a>
       <div class="jackpot">
         <div class="jp-label">Weekly Jackpot</div>
         <div class="jp-amount">₹1,00,00,000</div>
@@ -441,7 +514,7 @@
           <div class="p-label"><span>Bets placed today</span><b>92%</b></div>
           <div class="p-bar"><i style="width:92%"></i></div>
         </div>
-        <a class="btn btn-blue bet-cta" href="#offers">Place Bet</a>
+        <a class="btn btn-blue bet-cta" href="#" data-signup="INC130">Place Bet</a>
       </div>
       <div class="bet-card">
         <div class="bet-top"><span class="bet-league">Cricket · IPL</span><span class="live-dot">Live</span></div>
@@ -455,7 +528,7 @@
           <div class="p-label"><span>Bets placed today</span><b>87%</b></div>
           <div class="p-bar"><i style="width:87%"></i></div>
         </div>
-        <a class="btn btn-blue bet-cta" href="#offers">Place Bet</a>
+        <a class="btn btn-blue bet-cta" href="#" data-signup="INC130">Place Bet</a>
       </div>
       <div class="bet-card">
         <div class="bet-top"><span class="bet-league">Football · EPL</span><span class="bet-league">Today 21:30</span></div>
@@ -469,7 +542,7 @@
           <div class="p-label"><span>Bets placed today</span><b>78%</b></div>
           <div class="p-bar"><i style="width:78%"></i></div>
         </div>
-        <a class="btn btn-blue bet-cta" href="#offers">Place Bet</a>
+        <a class="btn btn-blue bet-cta" href="#" data-signup="INC130">Place Bet</a>
       </div>
     </div>
   </div>
@@ -527,25 +600,25 @@
       <p>Live casino with real dealers — Teen Patti, Baccarat, Andar Bahar &amp; Roulette — plus the crash games everyone is playing.</p>
     </div>
     <div class="game-grid">
-      <a class="game g-aviator" href="#offers">
+      <a class="game g-aviator" href="#" data-signup="INC130">
         <span class="g-badge">🔥 Trending</span>
         <span class="g-emoji">✈️</span>
         <h3>Aviator</h3>
         <p>Cash out before the plane flies away</p>
       </a>
-      <a class="game g-teenpatti" href="#offers">
+      <a class="game g-teenpatti" href="#" data-signup="LCAS100">
         <span class="g-badge">Live Dealer</span>
         <span class="g-emoji">🃏</span>
         <h3>Teen Patti</h3>
         <p>India's classic card game, live 24/7</p>
       </a>
-      <a class="game g-jetx" href="#offers">
+      <a class="game g-jetx" href="#" data-signup="INC130">
         <span class="g-badge">Crash Game</span>
         <span class="g-emoji">🚀</span>
         <h3>JetX</h3>
         <p>Ride the jet, multiply your stake</p>
       </a>
-      <a class="game g-chicken" href="#offers">
+      <a class="game g-chicken" href="#" data-signup="INC130">
         <span class="g-badge">New</span>
         <span class="g-emoji">🐔</span>
         <h3>Chicken Road</h3>
@@ -569,21 +642,21 @@
         <h3>130% Bonus + Free Bet</h3>
         <p>Up to ₹20,000 on your first deposit, plus a free bet to get you started on sports.</p>
         <div class="o-code"><span>INC130</span><button onclick="copyCode('INC130',this)">Copy</button></div>
-        <a class="btn btn-gold" href="#">Claim Offer</a>
+        <a class="btn btn-gold" href="#" data-signup="INC130">Claim Offer</a>
       </div>
       <div class="offer">
         <span class="o-tag">🎰 Slots</span>
         <h3>100% Slots Bonus</h3>
         <p>Double your deposit to spin thousands of premium slots from the world's top providers.</p>
         <div class="o-code"><span>JP100</span><button onclick="copyCode('JP100',this)">Copy</button></div>
-        <a class="btn btn-blue" href="#">Claim Offer</a>
+        <a class="btn btn-blue" href="#" data-signup="JP100">Claim Offer</a>
       </div>
       <div class="offer">
         <span class="o-tag">🎲 Live Casino</span>
         <h3>Live Casino Bonus</h3>
         <p>Teen Patti, Baccarat, Andar Bahar &amp; Roulette with real dealers — boosted with a live casino bonus.</p>
         <div class="o-code"><span>LCAS100</span><button onclick="copyCode('LCAS100',this)">Copy</button></div>
-        <a class="btn btn-blue" href="#">Claim Offer</a>
+        <a class="btn btn-blue" href="#" data-signup="LCAS100">Claim Offer</a>
       </div>
     </div>
   </div>
@@ -639,7 +712,7 @@
   <div class="wrap">
     <h2>Ready to Win? <span>₹20,000</span> Bonus Awaits</h2>
     <p>Register now with code <b style="color:var(--gold-2)">INC130</b> and join 100K+ players on India's premier betting &amp; casino platform.</p>
-    <a class="btn btn-gold btn-lg" href="#">Register &amp; Claim 130% Bonus</a>
+    <a class="btn btn-gold btn-lg" href="#" data-signup="INC130">Register &amp; Claim 130% Bonus</a>
   </div>
 </section>
 
@@ -681,7 +754,88 @@
   </div>
 </footer>
 
+<!-- mobile sticky CTA -->
+<div class="mobile-cta">
+  <a class="btn btn-gold" href="#" data-signup="INC130">🎁 Claim ₹20,000 Bonus</a>
+  <div class="mc-note">130% bonus + free bet with code <b>INC130</b> · Instant UPI withdrawal</div>
+</div>
+
+<!-- signup modal -->
+<div class="modal-overlay" id="signupOverlay" role="dialog" aria-modal="true" aria-labelledby="signupTitle">
+  <div class="signup-modal" id="signupModal">
+    <button class="modal-close" onclick="closeSignup()" aria-label="Close">✕</button>
+    <div class="m-offer">
+      <small>Your Bonus</small>
+      <b id="mOfferText">130% Bonus + Free Bet up to ₹20,000</b>
+    </div>
+    <h3 id="signupTitle">Create Your Free Account</h3>
+    <p class="m-sub">Takes less than 60 seconds — bonus applied automatically.</p>
+    <ul class="m-benefits">
+      <li>Instant withdrawals — UPI, PhonePe, Paytm, USDT</li>
+      <li>Highest odds in India + live match streaming</li>
+      <li>24/7 support in Hindi, Marathi &amp; English</li>
+    </ul>
+    <form id="signupForm">
+      <div class="field">
+        <label for="fMobile">Mobile Number</label>
+        <div class="input-row">
+          <span class="prefix">+91</span>
+          <input id="fMobile" type="tel" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="fCode">Promo Code</label>
+        <div class="input-row">
+          <input id="fCode" class="code-input" type="text" value="INC130" maxlength="10">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-gold btn-lg m-submit">Register &amp; Claim Bonus</button>
+    </form>
+    <div class="m-success">
+      <div class="tick">✓</div>
+      <h4>You're Almost There!</h4>
+      <p>We've sent an OTP to your mobile number. Verify it to activate your account and claim your bonus.</p>
+    </div>
+    <p class="m-note">18+ only · Play responsibly · T&amp;Cs apply</p>
+  </div>
+</div>
+
 <script>
+  // ---- signup modal ----
+  var offerText = {
+    INC130: '130% Bonus + Free Bet up to ₹20,000',
+    JP100: '100% Slots Bonus',
+    LCAS100: 'Live Casino Bonus — Teen Patti & More'
+  };
+  function openSignup(code){
+    code = code || 'INC130';
+    document.getElementById('fCode').value = code;
+    document.getElementById('mOfferText').textContent = offerText[code] || offerText.INC130;
+    document.getElementById('signupModal').classList.remove('done');
+    document.getElementById('signupOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    setTimeout(function(){ document.getElementById('fMobile').focus(); }, 150);
+  }
+  function closeSignup(){
+    document.getElementById('signupOverlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('click', function(e){
+    var t = e.target.closest('[data-signup]');
+    if(t){ e.preventDefault(); openSignup(t.getAttribute('data-signup')); }
+  });
+  document.getElementById('signupOverlay').addEventListener('click', function(e){
+    if(e.target === this) closeSignup();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeSignup();
+  });
+  document.getElementById('signupForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    // TODO: POST { mobile, promoCode } to your registration endpoint here
+    document.getElementById('signupModal').classList.add('done');
+  });
+
   // copy promo code
   function copyCode(code, btn){
     navigator.clipboard.writeText(code).then(function(){
