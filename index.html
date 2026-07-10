@@ -141,6 +141,10 @@
   .odd.sel{background:var(--blue)}
   .odd.sel span{color:rgba(255,255,255,.75)}
   .odd.sel b{color:#fff}
+  .odd.up{animation:oddUp 1.6s ease-out}
+  .odd.down{animation:oddDown 1.6s ease-out}
+  @keyframes oddUp{0%{background:rgba(53,198,107,.55)}100%{background:var(--odd)}}
+  @keyframes oddDown{0%{background:rgba(229,72,77,.55)}100%{background:var(--odd)}}
   .bets-foot{margin-top:18px;text-align:center}
 
   /* ---------- sections ---------- */
@@ -318,82 +322,7 @@
       <div class="stat" data-i18n="stat4"></div>
     </div>
 
-    <div class="bet-grid">
-
-      <div class="bcard" data-signup="INC130">
-        <div class="b-head">
-          <div>
-            <div class="b-path" data-i18n="path1"></div>
-            <div class="b-meta" data-i18n="time1"></div>
-          </div>
-          <svg class="b-star" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M11.05 3.4c.3-.92 1.6-.92 1.9 0l1.52 4.67a1 1 0 0 0 .95.69h4.91c.97 0 1.37 1.24.59 1.81l-3.98 2.89a1 1 0 0 0-.36 1.12l1.52 4.67c.3.92-.76 1.69-1.54 1.12l-3.97-2.89a1 1 0 0 0-1.18 0l-3.97 2.89c-.78.57-1.84-.2-1.54-1.12l1.52-4.67a1 1 0 0 0-.36-1.12L3.08 10.6c-.78-.57-.38-1.81.59-1.81h4.91a1 1 0 0 0 .95-.69l1.52-4.67Z"/></svg>
-        </div>
-        <div class="b-teams">
-          <div class="b-team"><span data-i18n="t_eng"></span></div>
-          <div class="b-team"><span data-i18n="t_ind"></span></div>
-        </div>
-        <div class="b-odds">
-          <button class="odd sel"><span>1</span><b>1.80</b></button>
-          <button class="odd"><span>2</span><b>2.00</b></button>
-        </div>
-      </div>
-
-      <div class="bcard" data-signup="INC130">
-        <div class="b-head">
-          <div>
-            <div class="b-path" data-i18n="path2"></div>
-            <div class="b-meta b-live" data-i18n="live_info"></div>
-          </div>
-          <svg class="b-star" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M11.05 3.4c.3-.92 1.6-.92 1.9 0l1.52 4.67a1 1 0 0 0 .95.69h4.91c.97 0 1.37 1.24.59 1.81l-3.98 2.89a1 1 0 0 0-.36 1.12l1.52 4.67c.3.92-.76 1.69-1.54 1.12l-3.97-2.89a1 1 0 0 0-1.18 0l-3.97 2.89c-.78.57-1.84-.2-1.54-1.12l1.52-4.67a1 1 0 0 0-.36-1.12L3.08 10.6c-.78-.57-.38-1.81.59-1.81h4.91a1 1 0 0 0 .95-.69l1.52-4.67Z"/></svg>
-        </div>
-        <div class="b-teams">
-          <div class="b-team"><span data-i18n="t_kd"></span><span class="b-score">102/1</span></div>
-          <div class="b-team"><span data-i18n="t_rrr"></span><span class="b-score">0/0</span></div>
-        </div>
-        <div class="b-odds">
-          <button class="odd"><span>1</span><b>1.20</b></button>
-          <button class="odd"><span>2</span><b>4.35</b></button>
-        </div>
-      </div>
-
-      <div class="bcard" data-signup="INC130">
-        <div class="b-head">
-          <div>
-            <div class="b-path" data-i18n="path3"></div>
-            <div class="b-meta" data-i18n="time3"></div>
-          </div>
-          <svg class="b-star" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M11.05 3.4c.3-.92 1.6-.92 1.9 0l1.52 4.67a1 1 0 0 0 .95.69h4.91c.97 0 1.37 1.24.59 1.81l-3.98 2.89a1 1 0 0 0-.36 1.12l1.52 4.67c.3.92-.76 1.69-1.54 1.12l-3.97-2.89a1 1 0 0 0-1.18 0l-3.97 2.89c-.78.57-1.84-.2-1.54-1.12l1.52-4.67a1 1 0 0 0-.36-1.12L3.08 10.6c-.78-.57-.38-1.81.59-1.81h4.91a1 1 0 0 0 .95-.69l1.52-4.67Z"/></svg>
-        </div>
-        <div class="b-teams">
-          <div class="b-team"><span data-i18n="t_fra"></span></div>
-          <div class="b-team"><span data-i18n="t_mor"></span></div>
-        </div>
-        <div class="b-odds">
-          <button class="odd"><span>1</span><b>1.61</b></button>
-          <button class="odd"><span>X</span><b>4.10</b></button>
-          <button class="odd"><span>2</span><b>6.00</b></button>
-        </div>
-      </div>
-
-      <div class="bcard" data-signup="INC130">
-        <div class="b-head">
-          <div>
-            <div class="b-path" data-i18n="path2b"></div>
-            <div class="b-meta" data-i18n="time4"></div>
-          </div>
-          <svg class="b-star" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M11.05 3.4c.3-.92 1.6-.92 1.9 0l1.52 4.67a1 1 0 0 0 .95.69h4.91c.97 0 1.37 1.24.59 1.81l-3.98 2.89a1 1 0 0 0-.36 1.12l1.52 4.67c.3.92-.76 1.69-1.54 1.12l-3.97-2.89a1 1 0 0 0-1.18 0l-3.97 2.89c-.78.57-1.84-.2-1.54-1.12l1.52-4.67a1 1 0 0 0-.36-1.12L3.08 10.6c-.78-.57-.38-1.81.59-1.81h4.91a1 1 0 0 0 .95-.69l1.52-4.67Z"/></svg>
-        </div>
-        <div class="b-teams">
-          <div class="b-team"><span data-i18n="t_hec"></span></div>
-          <div class="b-team"><span data-i18n="t_aka"></span></div>
-        </div>
-        <div class="b-odds">
-          <button class="odd"><span>1</span><b>1.65</b></button>
-          <button class="odd"><span>2</span><b>2.15</b></button>
-        </div>
-      </div>
-
-    </div>
+    <div class="bet-grid" id="betGrid"></div>
     <div class="bets-foot">
       <a class="btn btn-ghost" href="https://www.sbotop.com/register?lg=en-US&btag=656693_ANT_3" data-signup="INC130" data-i18n="bets_all"></a>
     </div>
@@ -534,17 +463,6 @@
       hero_sub:"असली मैच, सटीक ओड्स — देखिए भारत अभी किस पर बेट लगा रहा है। शुरू करने के लिए किसी भी ओड्स पर टैप करें।",
       stat1:"बेट <b>2 मिनट</b> से कम में", stat2:"निकासी <b>1 मिनट</b> से कम में",
       stat3:"<b>100K+</b> एक्टिव यूज़र्स", stat4:"<b>24/7</b> हिंदी सपोर्ट",
-      path1:"क्रिकेट / इंटरनेशनल / T20 सीरीज़ इंग्लैंड बनाम भारत",
-      time1:"आज 22:00",
-      t_eng:"इंग्लैंड", t_ind:"भारत",
-      path2:"क्रिकेट / भारत / T20 तेलंगाना लीग", path2b:"क्रिकेट / भारत / T20 तेलंगाना लीग",
-      live_info:"पहली पारी · ओवर 8.5",
-      t_kd:"करीमनगर डायमंड्स", t_rrr:"रंगा रेड्डी राइज़र्स",
-      path3:"फुटबॉल / इंटरनेशनल / फीफा वर्ल्ड कप",
-      time3:"कल 01:30",
-      t_fra:"फ्रांस", t_mor:"मोरक्को",
-      time4:"आज 19:15",
-      t_hec:"हैदराबाद ई-चैंपियंस", t_aka:"अन्विता खम्मम एसेस",
       bets_all:"सभी मैच और ओड्स देखें",
       speed_h:"बेट 2 मिनट में। पैसा 1 मिनट में।",
       speed_sub:"रजिस्ट्रेशन से लेकर जीत की निकासी तक — सब कुछ तेज़।",
@@ -586,17 +504,6 @@
       hero_sub:"खरे सामने, अचूक ओड्स — भारत आत्ता कशावर बेट लावत आहे ते पहा. सुरू करण्यासाठी कोणत्याही ओड्सवर टॅप करा.",
       stat1:"बेट <b>2 मिनिटांत</b>", stat2:"पैसे काढा <b>1 मिनिटात</b>",
       stat3:"<b>100K+</b> सक्रिय युझर्स", stat4:"<b>24/7</b> मराठी सपोर्ट",
-      path1:"क्रिकेट / आंतरराष्ट्रीय / T20 मालिका इंग्लंड वि. भारत",
-      time1:"आज 22:00",
-      t_eng:"इंग्लंड", t_ind:"भारत",
-      path2:"क्रिकेट / भारत / T20 तेलंगणा लीग", path2b:"क्रिकेट / भारत / T20 तेलंगणा लीग",
-      live_info:"पहिली इनिंग · ओव्हर 8.5",
-      t_kd:"करीमनगर डायमंड्स", t_rrr:"रंगा रेड्डी रायझर्स",
-      path3:"फुटबॉल / आंतरराष्ट्रीय / फिफा वर्ल्ड कप",
-      time3:"उद्या 01:30",
-      t_fra:"फ्रान्स", t_mor:"मोरोक्को",
-      time4:"आज 19:15",
-      t_hec:"हैदराबाद ई-चॅम्पियन्स", t_aka:"अन्विता खम्मम एसेस",
       bets_all:"सर्व सामने आणि ओड्स पहा",
       speed_h:"बेट 2 मिनिटांत. पैसे 1 मिनिटात.",
       speed_sub:"नोंदणीपासून जिंकलेले पैसे काढण्यापर्यंत — सर्व काही वेगवान.",
@@ -638,17 +545,6 @@
       hero_sub:"Real matches, exact odds — see what India is betting on right now. Tap any odds to get started.",
       stat1:"Bet in under <b>2 minutes</b>", stat2:"Withdraw in under <b>1 minute</b>",
       stat3:"<b>100K+</b> active users", stat4:"<b>24/7</b> live support",
-      path1:"Cricket / International / T20 Series England vs India",
-      time1:"Today 22:00",
-      t_eng:"England", t_ind:"India",
-      path2:"Cricket / India / T20 Telangana League", path2b:"Cricket / India / T20 Telangana League",
-      live_info:"1st Innings · Over 8.5",
-      t_kd:"Karimnagar Diamonds", t_rrr:"Ranga Reddy Risers",
-      path3:"Football / International / FIFA World Cup",
-      time3:"Tomorrow 01:30",
-      t_fra:"France", t_mor:"Morocco",
-      time4:"Today 19:15",
-      t_hec:"Hyderabad E-Champions", t_aka:"Anvita Khammam Aces",
       bets_all:"See all matches & odds",
       speed_h:"Bet in 2 minutes. Money in 1.",
       speed_sub:"From sign-up to cashing out your winnings — everything is fast.",
@@ -701,11 +597,94 @@
     document.querySelectorAll('.lang-pill').forEach(function(p){
       p.classList.toggle('active', p.getAttribute('data-lang') === l);
     });
+    renderBets();
   }
 
   document.querySelectorAll('.lang-pill').forEach(function(p){
     p.addEventListener('click', function(){ setLang(p.getAttribute('data-lang')); });
   });
+
+  /* ================= live bets feed ================= */
+  var FEED_URL = 'feed.json';   /* your odds feed; same schema as feed.json in this repo */
+  var POLL_MS = 30000;          /* refresh interval */
+
+  var BETS = [
+    {
+      path:{en:"Cricket / International / T20 Series England vs India",hi:"\u0915\u094d\u0930\u093f\u0915\u0947\u091f / \u0907\u0902\u091f\u0930\u0928\u0947\u0936\u0928\u0932 / T20 \u0938\u0940\u0930\u0940\u091c\u093c \u0907\u0902\u0917\u094d\u0932\u0948\u0902\u0921 \u092c\u0928\u093e\u092e \u092d\u093e\u0930\u0924",mr:"\u0915\u094d\u0930\u093f\u0915\u0947\u091f / \u0906\u0902\u0924\u0930\u0930\u093e\u0937\u094d\u091f\u094d\u0930\u0940\u092f / T20 \u092e\u093e\u0932\u093f\u0915\u093e \u0907\u0902\u0917\u094d\u0932\u0902\u0921 \u0935\u093f. \u092d\u093e\u0930\u0924"},
+      time:{en:"Today 22:00",hi:"\u0906\u091c 22:00",mr:"\u0906\u091c 22:00"},
+      teams:[{name:{en:"England",hi:"\u0907\u0902\u0917\u094d\u0932\u0948\u0902\u0921",mr:"\u0907\u0902\u0917\u094d\u0932\u0902\u0921"}},{name:{en:"India",hi:"\u092d\u093e\u0930\u0924",mr:"\u092d\u093e\u0930\u0924"}}],
+      odds:[{label:"1",value:1.80,sel:true},{label:"2",value:2.00}]
+    },
+    {
+      path:{en:"Cricket / India / T20 Telangana League",hi:"\u0915\u094d\u0930\u093f\u0915\u0947\u091f / \u092d\u093e\u0930\u0924 / T20 \u0924\u0947\u0932\u0902\u0917\u093e\u0928\u093e \u0932\u0940\u0917",mr:"\u0915\u094d\u0930\u093f\u0915\u0947\u091f / \u092d\u093e\u0930\u0924 / T20 \u0924\u0947\u0932\u0902\u0917\u0923\u093e \u0932\u0940\u0917"},
+      live:{en:"1st Innings \u00b7 Over 8.5",hi:"\u092a\u0939\u0932\u0940 \u092a\u093e\u0930\u0940 \u00b7 \u0913\u0935\u0930 8.5",mr:"\u092a\u0939\u093f\u0932\u0940 \u0907\u0928\u093f\u0902\u0917 \u00b7 \u0913\u0935\u094d\u0939\u0930 8.5"},
+      teams:[{name:{en:"Karimnagar Diamonds",hi:"\u0915\u0930\u0940\u092e\u0928\u0917\u0930 \u0921\u093e\u092f\u092e\u0902\u0921\u094d\u0938",mr:"\u0915\u0930\u0940\u092e\u0928\u0917\u0930 \u0921\u093e\u092f\u092e\u0902\u0921\u094d\u0938"},score:"102/1"},{name:{en:"Ranga Reddy Risers",hi:"\u0930\u0902\u0917\u093e \u0930\u0947\u0921\u094d\u0921\u0940 \u0930\u093e\u0907\u091c\u093c\u0930\u094d\u0938",mr:"\u0930\u0902\u0917\u093e \u0930\u0947\u0921\u094d\u0921\u0940 \u0930\u093e\u092f\u091d\u0930\u094d\u0938"},score:"0/0"}],
+      odds:[{label:"1",value:1.20},{label:"2",value:4.35}]
+    },
+    {
+      path:{en:"Football / International / FIFA World Cup",hi:"\u092b\u0941\u091f\u092c\u0949\u0932 / \u0907\u0902\u091f\u0930\u0928\u0947\u0936\u0928\u0932 / \u092b\u0940\u092b\u093e \u0935\u0930\u094d\u0932\u094d\u0921 \u0915\u092a",mr:"\u092b\u0941\u091f\u092c\u0949\u0932 / \u0906\u0902\u0924\u0930\u0930\u093e\u0937\u094d\u091f\u094d\u0930\u0940\u092f / \u092b\u093f\u092b\u093e \u0935\u0930\u094d\u0932\u094d\u0921 \u0915\u092a"},
+      time:{en:"Tomorrow 01:30",hi:"\u0915\u0932 01:30",mr:"\u0909\u0926\u094d\u092f\u093e 01:30"},
+      teams:[{name:{en:"France",hi:"\u092b\u094d\u0930\u093e\u0902\u0938",mr:"\u092b\u094d\u0930\u093e\u0928\u094d\u0938"}},{name:{en:"Morocco",hi:"\u092e\u094b\u0930\u0915\u094d\u0915\u094b",mr:"\u092e\u094b\u0930\u094b\u0915\u094d\u0915\u094b"}}],
+      odds:[{label:"1",value:1.61},{label:"X",value:4.10},{label:"2",value:6.00}]
+    },
+    {
+      path:{en:"Cricket / India / T20 Telangana League",hi:"\u0915\u094d\u0930\u093f\u0915\u0947\u091f / \u092d\u093e\u0930\u0924 / T20 \u0924\u0947\u0932\u0902\u0917\u093e\u0928\u093e \u0932\u0940\u0917",mr:"\u0915\u094d\u0930\u093f\u0915\u0947\u091f / \u092d\u093e\u0930\u0924 / T20 \u0924\u0947\u0932\u0902\u0917\u0923\u093e \u0932\u0940\u0917"},
+      time:{en:"Today 19:15",hi:"\u0906\u091c 19:15",mr:"\u0906\u091c 19:15"},
+      teams:[{name:{en:"Hyderabad E-Champions",hi:"\u0939\u0948\u0926\u0930\u093e\u092c\u093e\u0926 \u0908-\u091a\u0948\u0902\u092a\u093f\u092f\u0902\u0938",mr:"\u0939\u0948\u0926\u0930\u093e\u092c\u093e\u0926 \u0908-\u091a\u0945\u092e\u094d\u092a\u093f\u092f\u0928\u094d\u0938"}},{name:{en:"Anvita Khammam Aces",hi:"\u0905\u0928\u094d\u0935\u093f\u0924\u093e \u0916\u092e\u094d\u092e\u092e \u090f\u0938\u0947\u0938",mr:"\u0905\u0928\u094d\u0935\u093f\u0924\u093e \u0916\u092e\u094d\u092e\u092e \u090f\u0938\u0947\u0938"}}],
+      odds:[{label:"1",value:1.65},{label:"2",value:2.15}]
+    }
+  ];
+
+  function L(v){ return typeof v === 'string' ? v : (v && (v[lang] || v.en)) || ''; }
+
+  var STAR = '<svg class="b-star" viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M11.05 3.4c.3-.92 1.6-.92 1.9 0l1.52 4.67a1 1 0 0 0 .95.69h4.91c.97 0 1.37 1.24.59 1.81l-3.98 2.89a1 1 0 0 0-.36 1.12l1.52 4.67c.3.92-.76 1.69-1.54 1.12l-3.97-2.89a1 1 0 0 0-1.18 0l-3.97 2.89c-.78.57-1.84-.2-1.54-1.12l1.52-4.67a1 1 0 0 0-.36-1.12L3.08 10.6c-.78-.57-.38-1.81.59-1.81h4.91a1 1 0 0 0 .95-.69l1.52-4.67Z"/></svg>';
+
+  function renderBets(flash){
+    var grid = document.getElementById('betGrid');
+    if(!grid) return;
+    var h = '';
+    BETS.forEach(function(b, i){
+      h += '<div class="bcard" data-signup="INC130"><div class="b-head"><div>' +
+           '<div class="b-path">' + L(b.path) + '</div>' +
+           '<div class="b-meta' + (b.live ? ' b-live' : '') + '">' + L(b.live ? b.live : b.time) + '</div>' +
+           '</div>' + STAR + '</div><div class="b-teams">';
+      b.teams.forEach(function(t){
+        h += '<div class="b-team"><span>' + L(t.name) + '</span>' +
+             (t.score ? '<span class="b-score">' + t.score + '</span>' : '') + '</div>';
+      });
+      h += '</div><div class="b-odds">';
+      b.odds.forEach(function(o, j){
+        var f = flash && flash[i] && flash[i][j] ? ' ' + flash[i][j] : '';
+        h += '<button class="odd' + (o.sel ? ' sel' : '') + f + '"><span>' + o.label + '</span><b>' +
+             Number(o.value).toFixed(2) + '</b></button>';
+      });
+      h += '</div></div>';
+    });
+    grid.innerHTML = h;
+  }
+
+  function applyFeed(bets){
+    var flash = [];
+    bets.forEach(function(b, i){
+      flash[i] = [];
+      var old = BETS[i];
+      b.odds.forEach(function(o, j){
+        var ov = old && old.odds[j] ? Number(old.odds[j].value) : null;
+        if(ov !== null && Number(o.value) !== ov) flash[i][j] = Number(o.value) > ov ? 'up' : 'down';
+      });
+    });
+    BETS = bets;
+    renderBets(flash);
+  }
+
+  function pollFeed(){
+    fetch(FEED_URL + (FEED_URL.indexOf('?') < 0 ? '?' : '&') + 't=' + Date.now(), {cache:'no-store'})
+      .then(function(r){ return r.ok ? r.json() : Promise.reject(); })
+      .then(function(d){ if(d && d.bets && d.bets.length) applyFeed(d.bets); })
+      .catch(function(){ /* feed unreachable: keep showing current odds */ });
+  }
+  setInterval(pollFeed, POLL_MS);
+  pollFeed();
 
   /* ================= CTA -> registration ================= */
   document.addEventListener('click', function(e){
